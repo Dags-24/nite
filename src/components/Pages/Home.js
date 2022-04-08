@@ -12,6 +12,7 @@ import { HomeData } from "../../Charts Data/HomeData";
 import TextField from "@mui/material/TextField";
 import HomeDay from "../HomeDay";
 import Habit from "../Habit";
+import FetchQuote from "../quoteFetcher";
 
 function Home() {
   const [error, setError] = useState("");
@@ -241,7 +242,9 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="bottompanel"></div>
+            <div className="bottompanel">
+              {/* <FetchQuote /> */}
+            </div>
           </div>
         </div>
       </div>
